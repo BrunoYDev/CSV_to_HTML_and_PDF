@@ -1,0 +1,8 @@
+class Reader{
+
+
+    Read(filepath){
+
+    }
+    
+};
