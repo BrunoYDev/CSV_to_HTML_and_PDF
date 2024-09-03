@@ -1,2 +1,7 @@
-name,age
-Bruno Garcia,21
+Name,Age,Email,Job Title,Salary,ID
+Bruno Garcia,21,bruno@mail.com,Software Engineer,2500,1
+Alexander Oliveira,27,alexander@mail.com,Designer UI & UX,2000,2
+Albert Smith,32,albert@mail.com,Software Engineer,4000,3
+John Doe,42,johndoe@mail.com,Devops,7000,4
+Aldrich Mahnam,24,aldrich@mail.com,Cybersecurity Manager,10000,5
+Jason Maverick,37,jasonmav@mail.com,Software Engineer,8000,6
