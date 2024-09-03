@@ -1,16 +1,19 @@
-let Reader = require('./Reader');
-let Processor = require('./Processor');
-let Table = require('./Table');
+const Reader = require('./Reader');
+const Processor = require('./Processor');
+const Table = require('./Table');
+const HtmlParser = require('./HtmlParser');
 
-let reader = new Reader();
+const reader = new Reader();
 
 const Main = async () => {
     let data = await reader.Read("./users.csv");
     let processedData = Processor.Process(data);
 
     let users = new Table(processedData);
-    console.log(users.RowCount);
-    console.log(users.ColumnCount);
+    
+    let html = await HtmlParser.Parse(users);
+
+    console.log(html);
 };
 
 Main();
